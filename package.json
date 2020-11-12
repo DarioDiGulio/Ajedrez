@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc -p .",
+    "start": "live-server",
+    "build": "tsc -p . && sass sass:dist/styles",
     "watch-ts": "tsc -p . --watch",
     "watch-sass": "sass --watch sass:dist/styles",
     "sass": "sass sass:dist/styles",
@@ -15,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "i18n": "^0.13.2",
+    "live-server": "^1.2.1",
     "sass": "^1.27.1",
     "typescript": "^4.0.5"
   },

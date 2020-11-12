@@ -1,9 +1,7 @@
-import Route from "./utils/Interface/Route.js";
 import $Storage from "./utils/Interface/Storage.js";
 import createEvents from './utils/Interface/Events.js';
+import Board from './utils/Interface/Board/Board.js';
 
 createEvents();
-
-if (Route.IS_INDEX) {
-    new $Storage();
-}
+new Board();
+new $Storage();

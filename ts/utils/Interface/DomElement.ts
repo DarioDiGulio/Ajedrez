@@ -1,3 +1,5 @@
+import Piece from "./Board/Piece.js";
+
 class DomElement {
   private domElement: HTMLElement;
 
@@ -14,6 +16,7 @@ class DomElement {
    * @param text: String to set in innerText's element
    */
   public setInnerText(text: string): void {
+    debugger
     this.domElement.innerText = text;
   }
 
@@ -59,6 +62,10 @@ class DomElement {
 
   public addEvent(event: string, $function): void {
       this.domElement.addEventListener(event, $function);
+  }
+
+  public setPiece(piece: Piece): void {
+    this.setinnerHTML(piece.$html);
   }
 }
 

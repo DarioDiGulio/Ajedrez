@@ -1,0 +1,11 @@
+.col {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  &.white {
+    background-color: #FFAC69;
+  }
+  &.black {
+    background-color: #AD6224;
+  }
+}

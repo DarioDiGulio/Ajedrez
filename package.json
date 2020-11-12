@@ -1,0 +1,26 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -p .",
+    "watch-ts": "tsc -p . --watch",
+    "watch-sass": "sass --watch sass:dist/styles",
+    "sass": "sass sass:dist/styles",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i18n": "^0.13.2",
+    "sass": "^1.27.1",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1"
+  }
+}
